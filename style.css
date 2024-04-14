@@ -1,0 +1,43 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  background-color: rgb(160, 136, 57);
+  padding: 15px;
+}
+
+.header .cabecera {
+  background-color: rgb(238, 230, 124);
+  padding: 15px;
+  border: 1px solid black;
+}
+
+.header .banner {
+  background-color: rgb(238, 230, 124);
+  padding: 15px;
+  border: 1px solid black;
+}
+.contenido {
+  background-color: rgb(238, 230, 124);
+  padding: 15px;
+  border: 1px solid black;
+}
+
+.contenido .articulo {
+  padding: 15px;
+  border: 1px solid black;
+}
+
+.contenido .aside {
+  background-color: rgb(153, 147, 64);
+  padding: 15px;
+  border: 1px solid black;
+}
+.footer {
+  background-color: rgb(168, 163, 95);
+  padding: 15px;
+  border: 1px solid black;
+}

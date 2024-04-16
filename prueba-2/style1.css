@@ -1,6 +1,6 @@
 * {
   padding: 1rem;
-  margin:1rem;
+  margin: 1rem;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
   font-weight: 100;
@@ -10,7 +10,6 @@
 .padre {
   display: flex;
   flex-flow: column nowrap; /*incluye flex-direction y flex-wrap, Determina cuáles serán los ejes principal y transversal del contenedor.*/
- 
 }
 
 /*-----------------------------------------------------------*/
@@ -34,6 +33,7 @@ pero si lo defines con un solo número, es equivalente a 0 1.*/
   height: 3rem;
   background-color: rgb(179, 173, 98);
 }
+
 .nav {
   flex: 5 1 auto;
   height: 3rem;
@@ -86,7 +86,6 @@ pero si lo defines con un solo número, es equivalente a 0 1.*/
   background-color: rgb(116, 111, 41);
 }
 
-
 /*-----------------------------------------------------------*/
 @media all and (max-width: 800px) {
   .section {
@@ -96,8 +95,23 @@ pero si lo defines con un solo número, es equivalente a 0 1.*/
     flex-direction: column;
   }
   .aside {
-    display: flex;
+    display: flex; /*porq pone display: flex???*/
     justify-content: center; /*porq no funciona con align-items??*/
   }
 }
 
+@media all and (max-width: 600px) {
+  /*body{
+    background-color: rgb(240, 232, 163);
+  }*/
+
+  .articulos {
+    flex-direction: column;
+  }
+}
+
+@media all and (max-width: 550px) {
+  .aside {
+    flex-direction: column;
+  }
+}

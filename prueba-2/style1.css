@@ -1,0 +1,84 @@
+* {
+  padding: 1rem;
+  margin:1rem;
+  box-sizing: border-box;
+}
+
+.padre {
+  display: flex;
+  flex-flow: column nowrap; /*incluye flex-direction y flex-wrap, Determina cuáles serán los ejes principal y transversal del contenedor.*/
+  background-color: black;
+}
+
+/*-----------------------------------------------------------*/
+.header {
+  display: flex;
+  flex-flow: column nowrap;
+  background-color: rgb(75, 71, 21);
+}
+.cabecera {
+  display: flex;
+  flex-flow: row nowrap; /*pone row para que los hijos esten en una fila */
+
+  background-color: rgb(116, 111, 41);
+}
+
+/*flex: Esta es la propiedad shorthand para flex-grow, flex-shrink y flex-basis, combinadas. 
+El segundo y tercer parámetros (flex-shrink y flex-basis) son opcionales. El estándar es 0 1 auto, 
+pero si lo defines con un solo número, es equivalente a 0 1.*/
+.logo {
+  flex: 1 1 auto; /*es == que poner solo auto*/
+  height: 3rem;
+  background-color: rgb(179, 173, 98);
+}
+.nav {
+  flex: 5 1 auto;
+  height: 3rem;
+  background-color: rgb(179, 173, 98);
+}
+.social {
+  flex: 1 1 auto; /*es == que poner solo auto*/
+  height: 3rem;
+  background-color: rgb(179, 173, 98);
+}
+.banner {
+  background-color: rgb(116, 111, 41);
+}
+.titulo {
+  background-color: rgb(179, 173, 98);
+}
+
+/*-----------------------------------------------------------*/
+.section {
+  display: flex;
+  background-color: rgb(75, 71, 21);
+}
+.articulos {
+  flex: 2 1 auto;
+  display: flex;
+  flex-flow: row wrap;
+  background-color: rgb(116, 111, 41);
+}
+.article {
+  flex: 1 1 40%;
+  background-color: rgb(179, 173, 98);
+}
+.navegacion {
+  flex: 1 1 100%;
+  background-color: rgb(179, 173, 98);
+}
+.aside {
+  flex: 1 1 auto;
+  background-color: rgb(116, 111, 41);
+}
+.publicidad {
+  background-color: rgb(179, 173, 98);
+}
+
+/*-----------------------------------------------------------*/
+.footer {
+  background-color: rgb(75, 71, 21);
+}
+.pie {
+  background-color: rgb(116, 111, 41);
+}

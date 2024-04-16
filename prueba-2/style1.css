@@ -2,12 +2,15 @@
   padding: 1rem;
   margin:1rem;
   box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: normal;
 }
 
 .padre {
   display: flex;
   flex-flow: column nowrap; /*incluye flex-direction y flex-wrap, Determina cuáles serán los ejes principal y transversal del contenedor.*/
-  background-color: black;
+ 
 }
 
 /*-----------------------------------------------------------*/
@@ -82,3 +85,19 @@ pero si lo defines con un solo número, es equivalente a 0 1.*/
 .pie {
   background-color: rgb(116, 111, 41);
 }
+
+
+/*-----------------------------------------------------------*/
+@media all and (max-width: 800px) {
+  .section {
+    flex-direction: column;
+  }
+  .cabecera {
+    flex-direction: column;
+  }
+  .aside {
+    display: flex;
+    justify-content: center; /*porq no funciona con align-items??*/
+  }
+}
+

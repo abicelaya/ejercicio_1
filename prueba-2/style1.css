@@ -88,6 +88,10 @@ pero si lo defines con un solo número, es equivalente a 0 1.*/
 
 /*-----------------------------------------------------------*/
 @media all and (max-width: 800px) {
+  body {
+    background-color: rgb(15, 14, 3);
+  }
+
   .section {
     flex-direction: column;
   }
@@ -101,10 +105,9 @@ pero si lo defines con un solo número, es equivalente a 0 1.*/
 }
 
 @media all and (max-width: 600px) {
-  /*body{
-    background-color: rgb(240, 232, 163);
-  }*/
-
+  body {
+    background-color: rgb(211, 204, 140);
+  }
   .articulos {
     flex-direction: column;
   }
